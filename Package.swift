@@ -6,18 +6,18 @@ let package = Package(
     name: "SmartyStreets",
     products: [
         .library(
-            name: "SmartyStreets",
-            targets: ["SmartyStreets"]),
+            name: "SmartystreetsSDK",
+            targets: ["SmartystreetsSDK"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "SmartyStreets",
+            name: "SmartystreetsSDK",
             dependencies: [],
-            path: "Sources/SmartyStreets"),
+            path: "Sources/SmartystreetsSDK"),
         .testTarget(
             name: "SmartyStreetsTests",
-            dependencies: ["SmartyStreets"],
-            path: "Tests/SmartyStreetsTests"),
+            dependencies: ["SmartystreetsSDK"],
+            path: "Tests/SmartystreetsSDKTests"),
     ]
 )
